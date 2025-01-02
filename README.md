@@ -4,6 +4,10 @@ This project is part of the **Eurobot Competition**, where our **constructor rob
 
 The robot uses a **camera** to identify a structure by grouping **four ArUco markers**. It then calculates the **center point, distance**, and **angle** needed to approach the structure based on the detected markers.  
 
+![Capture d'écran 2025-01-02 142135](https://github.com/user-attachments/assets/fecd140e-0465-480a-8119-c2e28af08608)
+
+
+
 ---
 
 ## **1. Features**  
