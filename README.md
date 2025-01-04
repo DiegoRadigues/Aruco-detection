@@ -41,7 +41,7 @@ Although this approach is **not ideal**, it proved to be **very accurate** for t
 
 1. **Stability Issues**:  
    - Small **vibrations** during motion affect detection reliability.  
-   - The robot must **stop periodically** (for ~1 second) to take stable measurements.  
+   - The robot must **stop periodically** (for ~1 second) to take stable measurements.
 
 2. **Calibration Tradeoff**:  
    - Manual calibration is **not scalable** for other cameras and needs reconfiguration if hardware changes.  
@@ -80,17 +80,39 @@ This project uses the following Python libraries:
 10. Display computed values on the screen (real-time feedback).  
 
 ---
+## **6. Testing**  
+
+### **Reliability and Detection Range**  
+The system has been tested under **normal conditions** and demonstrated **reliable detection up to 1 meter**. With **optimal lighting**, the detection range can extend up to **1.5 meters**.  
+
+### **Hardware Dependence**  
+However, performance may vary based on the **final hardware configuration** of the robot. Additional tests will be conducted to:  
+- Determine the **minimum and maximum detection distances** under various lighting conditions.  
+- Evaluate the **effective detection angle** based on the final camera specs.  
+
+### **Calibration Accuracy**  
+The initial tests used **manual calibration**, achieving an **accuracy of 0.5 cm** at **1 meter** and **0° angle** (perpendicular).  
 
 
-## **6. Next Steps**  
+## **7. Next Steps**  
 
 - **Optimize Calibration**: Rework calibration with a proper method once the **final camera hardware** is installed.  
 - **Improve Stability**: Introduce a **motion stabilization algorithm** to reduce the impact of vibrations.
 
-## 7. Coding Aid and Tools
-The development of this project was based on the official OpenCV tutorial for ArUco marker detection:
+## 8. Coding Aid and Tools
+The development of this project was based on the official OpenCV tutorials for marker detection:
 
-- **Source:** [OpenCV ArUco Detection Tutorial](https://docs.opencv.org/4.x/d5/dae/tutorial_aruco_detection.html)  
+- **ArUco Marker Detection:**  
+  [OpenCV ArUco Detection Tutorial](https://docs.opencv.org/4.x/d5/dae/tutorial_aruco_detection.html)  
+  - Used for detecting individual ArUco markers.
+
+- **ChArUco Board Detection:**  
+  [OpenCV ChArUco Detection Tutorial](https://docs.opencv.org/4.x/df/d4a/tutorial_charuco_detection.html)  
+  - Atempted for camera calibration.
+ 
+- **Camera Calibration:**  
+  [OpenCV Camera Calibration Tutorial](https://docs.opencv.org/3.4/dc/dbb/tutorial_py_calibration.html#:~:text=We%20can%20use%20the%20function%2C%20cv.calibrateCamera%20%28%29%20which,OpenCV%20comes%20with%20two%20methods%20for%20doing%20this.)  
+  - Used for initial attempts at calibrating the camera.  
 
 
 All contributions are welcome
