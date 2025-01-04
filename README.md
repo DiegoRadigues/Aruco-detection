@@ -85,6 +85,12 @@ This project uses the following Python libraries:
 ## **6. Next Steps**  
 
 - **Optimize Calibration**: Rework calibration with a proper method once the **final camera hardware** is installed.  
-- **Improve Stability**: Introduce a **motion stabilization algorithm** to reduce the impact of vibrations.  
+- **Improve Stability**: Introduce a **motion stabilization algorithm** to reduce the impact of vibrations.
+
+## 7. Coding Aid and Tools
+The development of this project was based on the official OpenCV tutorial for ArUco marker detection:
+
+- **Source:** [OpenCV ArUco Detection Tutorial](https://docs.opencv.org/4.x/d5/dae/tutorial_aruco_detection.html)  
+
 
 All contributions are welcome
