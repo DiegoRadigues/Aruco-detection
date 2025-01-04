@@ -80,6 +80,7 @@ This project uses the following Python libraries:
 10. Display computed values on the screen (real-time feedback).  
 
 ---
+
 ## **6. Testing**  
 
 ### **Reliability and Detection Range**  
@@ -93,6 +94,7 @@ However, performance may vary based on the **final hardware configuration** of t
 ### **Calibration Accuracy**  
 The initial tests used **manual calibration**, achieving an **accuracy of 0.5 cm** at **1 meter** and **0° angle** (perpendicular).  
 
+---
 
 ## **7. Next Steps**  
 
